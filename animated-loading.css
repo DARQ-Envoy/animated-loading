@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ecf0f1;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.card{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+}
+.card-header{
+    height: 200px;
+}
+.card-header img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-content{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.card-title{
+    height: 20px;
+    margin: 0;
+}
+.card-excerpt{
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.author{
+    display: flex;
+}
+.profile-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+.author-info{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.animated-info  small{
+    color: #777;
+    margin-top: 5px;
+}
+
+.animated-bg{
+    background:linear-gradient(
+            to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+ 
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text{
+    display:inline-block;
+    border-radius: 50px;
+    width: 100%;
+    margin: 0;
+    height: 10px;
+}
+@keyframes bgPos{
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
+}
+.loading-anime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 150px;
+}
+.dots{
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.dot1{
+    margin-left: 3%;
+    background-color: #571313;
+}
+.dot2{
+    background-color: #29296e;
+}
+.dot3{
+    background-color: #571313;
+}

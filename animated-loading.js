@@ -16,13 +16,13 @@ setTimeout(()=>{
 
 function cardContent(){
     cardHeader.innerHTML=`
-    <img src="Eagle.jpg" alt="Eagle Image"/>
+    <img src="Eagle.jpg" alt="Eagle Image" class="image"/>
     `;
 heading.textContent=head;
 paraEl.textContent=AuthorText;
 authorName.textContent="John Doe";
 date.textContent="Oct 08,2021";
-authorImage.innerHTML=`<img src="dmw boss.jpg" alt="Davido's Image" />`
+authorImage.innerHTML=`<img src="dmw boss.jpg" alt="Davido's Image"/>`
 // heading.classList.remove("animated-bg","animated-bg-text");
 // authorName.classList.remove("animated-bg","animated-bg-text");
 // date.classList.remove("animated-bg","animated-bg-text");
